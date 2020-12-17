@@ -11,7 +11,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+
 
 def canvas(with_attribution=True):
     """
@@ -35,6 +36,7 @@ def canvas(with_attribution=True):
         quote += "\n\t- Adapted from Henry David Thoreau"
     return quote
 
+
 def zen(with_attribution=True):
     quote = """Beautiful is better than ugly.
     Explicit is better than implicit.
@@ -57,9 +59,10 @@ def zen(with_attribution=True):
     Namespaces are one honking great idea -- let's do more of those!"""
 
     if with_attribution:
-      quote += "\n\tTim Peters"
+        quote += "\n\tTim Peters"
 
     return quote
+
 
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
